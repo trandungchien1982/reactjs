@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import FC01 from './comps/FC01'
-import FC02 from './comps/FC02'
+import Greetings from './comps/Greetings'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,16 +21,17 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <h1>Function Component + useProp()</h1>
+        <h1>Conditional Rendering</h1>
         <FC01 price={currentPrice} year="1000" background="red" updatePrice={(val: number) => {
             console.log(" -- call updatePrice() in parent : " + val);
             setCurrentPrice(val);
         }} />
         <hr />
 
-        <h1>Function Component + useProp()</h1>
-        <FC01 price="500" year="6000"/>
+        <h1>Greetings with true/false</h1>
+        <Greetings isLoggedIn/>
         <hr />
+        <Greetings />
 
 
 
