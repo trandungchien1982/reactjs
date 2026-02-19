@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import FC01 from './comps/FC01'
 import Greetings from './comps/Greetings'
+import MessageCounter from './comps/MessageCounter'
+import AuthButton from './comps/AuthButton'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,22 +21,34 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>06. Condition Render</h1>
       <div className="card">
         <h1>Conditional Rendering</h1>
-        <FC01 price={currentPrice} year="1000" background="red" updatePrice={(val: number) => {
-            console.log(" -- call updatePrice() in parent : " + val);
-            setCurrentPrice(val);
-        }} />
-        <hr />
 
         <h1>Greetings with true/false</h1>
         <Greetings isLoggedIn/>
         <hr />
         <Greetings />
 
+        <h1>MessageCounter</h1>
+        <MessageCounter />
+        <hr />
+        <MessageCounter unreadCount=""/>
+        <hr />
+        <MessageCounter unreadCount={true}/>
+        <hr />
+        <MessageCounter unreadCount={20}/>
+        <hr />
+        <MessageCounter unreadCount="1"/>
 
-
+        <h1>AuthButton ? : </h1>
+        <AuthButton />
+        <hr />
+        <AuthButton isLoggedIn />
+        <hr />
+        <AuthButton isLoggedIn={true} />
+        <hr />
+        <AuthButton isLoggedIn={false} />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

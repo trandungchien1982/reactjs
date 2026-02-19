@@ -5,9 +5,9 @@ import './custom.css'
 
 function Greetings({ isLoggedIn }) {
   if (isLoggedIn) {
-    return <h1>Chào mừng trở lại!</h1>;
+    return <h3>HAVE LOGN - Chào mừng trở lại!</h3>;
   } else {
-    return <h1>Vui lòng đăng nhập.</h1>;
+    return <h3>NO LOGIN - Vui lòng đăng nhập.</h3>;
   }
 }
 export default Greetings;
