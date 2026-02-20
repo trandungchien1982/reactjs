@@ -1,32 +1,25 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import FC01 from './comps/FC01'
-import Greetings from './comps/Greetings'
-import MessageCounter from './comps/MessageCounter'
-import PageLayout from './comps/PageLayout'
+import withLoading from './comps/utils'
+import MyDataDisplay from './comps/MyDataDisplay'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [currentPrice, setCurrentPrice] = useState(120);
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(null);
 
-  const currentUser = { name: 'John Doe' }; // Giả định dữ liệu người dùng
+  useEffect(() => {
+      // Giả lập việc tải dữ liệu
+      setTimeout(() => {
+        setData("Đây là dữ liệu từ API - " + new Date());
+        setLoading(false);
+      }, 2000);
+    }, []);
 
-    // Tạo các element/component cho từng khu vực
-    const pageHeader = (
-      <div>
-        <h1>Tiêu đề Trang của Tôi</h1>
-        <p>Chào mừng, {currentUser.name}!</p>
-      </div>
-    );
-
-    const pageFooter = (
-      <div>
-        <p>Bản quyền © 2023 Công ty ABC.</p>
-        <a href="/privacy">Chính sách Bảo mật</a>
-      </div>
-    );
+  // Áp dụng HOC để tạo component mới có tính năng loading
+  const MyDataDisplayWithLoading = withLoading(MyDataDisplay);
 
   return (
     <>
@@ -38,29 +31,15 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>07. Composition</h1>
+      <h1>08.Composition-HOCs</h1>
       <div className="card">
-        <h1>React-Roadmap (Composition) - layout via props.children, props.header, props.footer</h1>
+        <h1>React-Roadmap (08.Composition-HOCs) - layout Higher-Order Components (HOCs) </h1>
         <a target="_blank" href="https://tuyendung.evotek.vn/ket-hop-component-trong-react-tai-su-dung-that-de-dang-react-roadmap/">https://tuyendung.evotek.vn/ket-hop-component-trong-react-tai-su-dung-that-de-dang-react-roadmap/</a>
       </div>
       <div>
-        Noi dung tiep theo ...
-      </div>
-      <div>
-        <PageLayout
-            header={pageHeader} // Truyền element vào prop 'header'
-            footer={pageFooter} // Truyền element vào prop 'footer'
-         >
-            {/* Nội dung chính của trang, sẽ trở thành props.children */}
-            <section>
-              <h2>Đây là phần nội dung chính</h2>
-              <p>Các đoạn văn, hình ảnh và các component khác đi vào đây...</p>
-            </section>
-            <section>
-              <h2>Một phần khác</h2>
-              <p>Thêm nội dung...</p>
-            </section>
-          </PageLayout>
+        <h2>Ứng dụng sử dụng HOC</h2>
+        {/* Component này giờ đây nhận thêm prop 'isLoading' */}
+        <MyDataDisplayWithLoading isLoading={loading} data={data} />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
