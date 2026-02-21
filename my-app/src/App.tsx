@@ -3,8 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import FC01 from './comps/FC01'
-import withLoading from './comps/utils'
-import MyDataDisplay from './comps/MyDataDisplay'
+import useToggle from './comps/utils'
+import ToggleButton from './comps/ToggleButton'
+import AnotherComponent from './comps/AnotherComponent'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,7 +27,10 @@ function App() {
         <a target="_blank" href="https://tuyendung.evotek.vn/ket-hop-component-trong-react-tai-su-dung-that-de-dang-react-roadmap/">https://tuyendung.evotek.vn/ket-hop-component-trong-react-tai-su-dung-that-de-dang-react-roadmap/</a>
       </div>
       <div>
-        ...
+          <h2>Ứng dụng sử dụng Custom Hooks - useToggle</h2>
+          <ToggleButton />
+          <br /><br /> {/* Thêm khoảng cách */}
+          <AnotherComponent />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
