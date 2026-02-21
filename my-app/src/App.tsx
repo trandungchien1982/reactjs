@@ -21,16 +21,14 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>09.Composition-CustomHooks</h1>
+      <h1>10.Component-LifeCycle-Mouting</h1>
       <div className="card">
-        <h2>React-Roadmap (09.Composition - Custom Hooks) - layout </h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/ket-hop-component-trong-react-tai-su-dung-that-de-dang-react-roadmap/">https://tuyendung.evotek.vn/ket-hop-component-trong-react-tai-su-dung-that-de-dang-react-roadmap/</a>
+        <h2>React-Roadmap (10.Component-LifeCycle-Mouting) - rendering </h2>
+        <a target="_blank" href="https://tuyendung.evotek.vn/vong-doi-component-trong-react-tu-khoi-tao-den-ket-thuc-react-roadmap/#Vong_Doi_Component_trong_React_la_gi">https://tuyendung.evotek.vn/vong-doi-component-trong-react-tu-khoi-tao-den-ket-thuc-react-roadmap/#Vong_Doi_Component_trong_React_la_gi</a>
       </div>
       <div>
-          <h2>Ứng dụng sử dụng Custom Hooks - useToggle</h2>
-          <ToggleButton />
-          <br /><br /> {/* Thêm khoảng cách */}
-          <AnotherComponent />
+          <h2>Giai Đoạn 1: Mounting (Khởi Tạo)</h2>
+          <p>...</p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
