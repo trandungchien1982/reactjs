@@ -2,9 +2,6 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import NumberList from './comps/NumberList'
-import NumberListWithKeys from './comps/NumberListWithKeys'
-import NumberListWithUUID from './comps/NumberListWithUUID'
 
 function App() {
   return (
@@ -17,21 +14,13 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>13.ListAndKeys</h1>
+      <h1>14.UseHooks.InsteadOf.HOCs.RenderProps</h1>
       <div className="card">
-        <h2>React-Roadmap (13.ListAndKeys) - rendering </h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/lam-viec-voi-danh-sach-va-key-trong-react-react-roadmap/#Render_Danh_Sach_Co_Ban_trong_React">https://tuyendung.evotek.vn/lam-viec-voi-danh-sach-va-key-trong-react-react-roadmap/#Render_Danh_Sach_Co_Ban_trong_React</a>
+        <h2>React-Roadmap (14.UseHooks.InsteadOf.HOCs.RenderProps) - rendering </h2>
+        <a target="_blank" href="https://tuyendung.evotek.vn/react-roadmap-render-props-vs-higher-order-components-cac-mau-thiet-ke-trong-thuc-te/">https://tuyendung.evotek.vn/react-roadmap-render-props-vs-higher-order-components-cac-mau-thiet-ke-trong-thuc-te/</a>
       </div>
       <div>
           <h2>Content</h2>
-          <p>Number List - No Keys</p>
-          <NumberList />
-
-          <p>Number List - WITH Keys</p>
-          <NumberListWithKeys />
-
-           <p>Number List - WITH UUIDs</p>
-           <NumberListWithUUID />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
