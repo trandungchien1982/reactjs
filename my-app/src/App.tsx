@@ -2,6 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import MouseDisplayWithHooks from './comps/MouseDisplayWithHooks'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       </div>
       <div>
           <h2>Content</h2>
+          <MouseDisplayWithHooks />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
