@@ -5,7 +5,7 @@ import './App.css'
 import FC01 from './comps/FC01'
 import useToggle from './comps/utils'
 import ToggleButton from './comps/ToggleButton'
-import AnotherComponent from './comps/AnotherComponent'
+import DataFetcherFunctional from './comps/DataFetcherFunctional'
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,7 +28,7 @@ function App() {
       </div>
       <div>
           <h2>Giai Đoạn 1: Mounting (Khởi Tạo)</h2>
-          <p>...</p>
+          <DataFetcherFunctional />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
