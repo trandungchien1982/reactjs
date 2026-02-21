@@ -15,13 +15,13 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>10.Component-LifeCycle-Mouting</h1>
+      <h1>12.Component-LifeCycle-Unmounting</h1>
       <div className="card">
-        <h2>React-Roadmap (10.Component-LifeCycle-Mouting) - rendering </h2>
+        <h2>React-Roadmap (12.Component-LifeCycle-Unmounting) - rendering </h2>
         <a target="_blank" href="https://tuyendung.evotek.vn/vong-doi-component-trong-react-tu-khoi-tao-den-ket-thuc-react-roadmap/#Vong_Doi_Component_trong_React_la_gi">https://tuyendung.evotek.vn/vong-doi-component-trong-react-tu-khoi-tao-den-ket-thuc-react-roadmap/#Vong_Doi_Component_trong_React_la_gi</a>
       </div>
       <div>
-          <h2>Giai Đoạn 1: Mounting (Khởi Tạo)</h2>
+          <h2>12.Component-LifeCycle-Unmounting</h2>
           <DataFetcherFunctional />
       </div>
       <p className="read-the-docs">
