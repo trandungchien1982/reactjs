@@ -2,7 +2,6 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import MouseDisplayWithHooks from './comps/MouseDisplayWithHooks'
 
 function App() {
   return (
@@ -15,14 +14,13 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>14.UseHooks.InsteadOf.HOCs.RenderProps</h1>
+      <h1>15.useRef</h1>
       <div className="card">
-        <h2>React-Roadmap (14.UseHooks.InsteadOf.HOCs.RenderProps) - rendering </h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/react-roadmap-render-props-vs-higher-order-components-cac-mau-thiet-ke-trong-thuc-te/">https://tuyendung.evotek.vn/react-roadmap-render-props-vs-higher-order-components-cac-mau-thiet-ke-trong-thuc-te/</a>
+        <h2>React-Roadmap (15.useRef) - rendering </h2>
+        <a target="_blank" href="https://tuyendung.evotek.vn/refs-trong-react-la-gi-truy-cap-dom-truc-tiep-dung-cach-react-roadmap/#Refs_la_gi_trong_React">https://tuyendung.evotek.vn/refs-trong-react-la-gi-truy-cap-dom-truc-tiep-dung-cach-react-roadmap/#Refs_la_gi_trong_React</a>
       </div>
       <div>
           <h2>Content</h2>
-          <MouseDisplayWithHooks />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
