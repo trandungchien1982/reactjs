@@ -2,6 +2,9 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import NumberList from './comps/NumberList'
+import NumberListWithKeys from './comps/NumberListWithKeys'
+import NumberListWithUUID from './comps/NumberListWithUUID'
 
 function App() {
   return (
@@ -21,6 +24,14 @@ function App() {
       </div>
       <div>
           <h2>Content</h2>
+          <p>Number List - No Keys</p>
+          <NumberList />
+
+          <p>Number List - WITH Keys</p>
+          <NumberListWithKeys />
+
+           <p>Number List - WITH UUIDs</p>
+           <NumberListWithUUID />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
