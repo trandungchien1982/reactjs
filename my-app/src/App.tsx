@@ -2,7 +2,6 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import DataFetcherFunctional from './comps/DataFetcherFunctional'
 
 function App() {
   return (
@@ -15,14 +14,13 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>12.Component-LifeCycle-Unmounting</h1>
+      <h1>13.ListAndKeys</h1>
       <div className="card">
-        <h2>React-Roadmap (12.Component-LifeCycle-Unmounting) - rendering </h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/vong-doi-component-trong-react-tu-khoi-tao-den-ket-thuc-react-roadmap/#Vong_Doi_Component_trong_React_la_gi">https://tuyendung.evotek.vn/vong-doi-component-trong-react-tu-khoi-tao-den-ket-thuc-react-roadmap/#Vong_Doi_Component_trong_React_la_gi</a>
+        <h2>React-Roadmap (13.ListAndKeys) - rendering </h2>
+        <a target="_blank" href="https://tuyendung.evotek.vn/lam-viec-voi-danh-sach-va-key-trong-react-react-roadmap/#Render_Danh_Sach_Co_Ban_trong_React">https://tuyendung.evotek.vn/lam-viec-voi-danh-sach-va-key-trong-react-react-roadmap/#Render_Danh_Sach_Co_Ban_trong_React</a>
       </div>
       <div>
-          <h2>12.Component-LifeCycle-Unmounting</h2>
-          <DataFetcherFunctional />
+          <h2>Content</h2>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
