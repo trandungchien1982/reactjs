@@ -3,6 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import FocusInput from './comps/FocusInput'
+import ScrollToDiv from './comps/ScrollToDiv'
+import Timer from './comps/Timer'
+import ParentComponentFW from './comps/ParentComponentFW'
+
 function App() {
   return (
     <>
@@ -21,6 +26,18 @@ function App() {
       </div>
       <div>
           <h2>Content</h2>
+          <h3>FocusInput</h3>
+          <FocusInput />
+
+          <h3>ScrollToDiv</h3>
+          <ScrollToDiv />
+
+          <h3>Timer</h3>
+          <Timer />
+
+          <h3>ParentComponentFW - forwardRef</h3>
+          <ParentComponentFW />
+
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
