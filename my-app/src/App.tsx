@@ -1,16 +1,10 @@
-import { useState, useEffect } from 'react'
+
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import FC01 from './comps/FC01'
-import useToggle from './comps/utils'
-import ToggleButton from './comps/ToggleButton'
 import DataFetcherFunctional from './comps/DataFetcherFunctional'
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  const [data, setData] = useState(null);
-
   return (
     <>
       <div>

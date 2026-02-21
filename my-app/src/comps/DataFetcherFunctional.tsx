@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import loadingBar from '../assets/carregando.gif'
 
 function DataFetcherFunctional() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-
-  // A utility function that returns a promise which resolves after a duration
-  function wait(duration) {
-    return new Promise((resolve) => {
-      setTimeout(resolve, duration);
-    });
-  }
-
   useEffect(() => {
     console.log('Effect ran: fetching data (simulating componentDidMount)');
     // Tác vụ side effect: Fetch data
