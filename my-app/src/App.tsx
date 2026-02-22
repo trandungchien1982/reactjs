@@ -2,10 +2,6 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import ClickComponents from './comps/ClickComponents'
-import DoubleClickComponents from './comps/DoubleClickComponents'
-import ChangeComponents from './comps/ChangeComponents'
-import ClickComponentsStopPropagation from './comps/ClickComponentsStopPropagation'
 
 function App() {
   return (
@@ -18,22 +14,14 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>16.HandleEvents</h1>
+      <h1>17.useState+useEffect</h1>
       <div className="card">
-        <h2>React-Roadmap (16.HandleEvents) - rendering </h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/xu-ly-su-kien-trong-react-cach-tiep-can-react-way-react-roadmap/">https://tuyendung.evotek.vn/xu-ly-su-kien-trong-react-cach-tiep-can-react-way-react-roadmap/</a>
+        <h2>React-Roadmap (17.useState+useEffect) - Hooks</h2>
+        <a target="_blank" href="https://tuyendung.evotek.vn/usestate-va-useeffect-sieu-nang-luc-nhap-mon-cua-react-react-roadmap/">https://tuyendung.evotek.vn/usestate-va-useeffect-sieu-nang-luc-nhap-mon-cua-react-react-roadmap/</a>
       </div>
       <div>
           <h2>Content</h2>
-          <h3>Click Components</h3>
-          <ClickComponents />
-          <h3>DoubleClick Components</h3>
-          <DoubleClickComponents />
-          <h3>Change Components</h3>
-          <ChangeComponents />
-          <h3>Click Components + Stop Propagation for Main Panel</h3>
-          <ClickComponentsStopPropagation />
-
+          <h3> --- </h3>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
