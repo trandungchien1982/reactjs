@@ -24,11 +24,11 @@ function App() {
       </div>
       <div>
           <h2>Content</h2>
-          <h3>Parent - normal</h3>
+          <h3>Parent - normal - Make Parent re-render and then all buttons re-render: [Click Me], [Another Button]</h3>
           <Parent />
 
           <hr/>
-          <h3>Parent with useCallback</h3>
+          <h3>Parent with useCallback - Parent re-render and then only inner buttons re-render: [Another Button]</h3>
           <ParentWithCallback />
       </div>
       <p className="read-the-docs">
