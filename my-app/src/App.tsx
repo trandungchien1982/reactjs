@@ -15,14 +15,14 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>17.useState+useEffect</h1>
+      <h1>18.CustomHook.useCounter</h1>
       <div className="card">
-        <h2>React-Roadmap (17.useState+useEffect) - Hooks</h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/usestate-va-useeffect-sieu-nang-luc-nhap-mon-cua-react-react-roadmap/">https://tuyendung.evotek.vn/usestate-va-useeffect-sieu-nang-luc-nhap-mon-cua-react-react-roadmap/</a>
+        <h2>React-Roadmap (18.CustomHook.useCounter) - Hooks</h2>
+        <a target="_blank" href="https://tuyendung.evotek.vn/tao-custom-hooks-trong-react-bien-tai-su-dung-ma-thanh-nghe-thuat-react-roadmap/#Custom_Hooks_La_Gi">https://tuyendung.evotek.vn/tao-custom-hooks-trong-react-bien-tai-su-dung-ma-thanh-nghe-thuat-react-roadmap/#Custom_Hooks_La_Gi</a>
       </div>
       <div>
           <h2>Content</h2>
-          <h3> --- </h3>
+          <h3>Counter with CustomHooks - useCounter</h3>
           <Counter />
       </div>
       <p className="read-the-docs">
