@@ -2,8 +2,9 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import StatusBar from './comps/StatusBar'
-import SaveButton from './comps/SaveButton'
+import Button from './comps/Button'
+import Parent from './comps/Parent'
+import ParentWithCallback from './comps/ParentWithCallback'
 
 function App() {
   return (
@@ -16,19 +17,19 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>19.CustomHook.useOnlineStatus</h1>
+      <h1>20.useCallback</h1>
       <div className="card">
-        <h2>React-Roadmap (19.CustomHook.useOnlineStatus) - Hooks</h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/tao-custom-hooks-trong-react-bien-tai-su-dung-ma-thanh-nghe-thuat-react-roadmap/#Vi_Du_Thuc_Te_Hon_useOnlineStatus">https://tuyendung.evotek.vn/tao-custom-hooks-trong-react-bien-tai-su-dung-ma-thanh-nghe-thuat-react-roadmap/#Vi_Du_Thuc_Te_Hon_useOnlineStatus</a>
+        <h2>React-Roadmap (20.useCallback) - Hooks</h2>
+        <a target="_blank" href="https://tuyendung.evotek.vn/khi-nao-va-vi-sao-nen-dung-usecallback-usememo-va-useref-react-roadmap/#useCallback_Ghi_nho_Memoizing_Ham">https://tuyendung.evotek.vn/khi-nao-va-vi-sao-nen-dung-usecallback-usememo-va-useref-react-roadmap/#useCallback_Ghi_nho_Memoizing_Ham</a>
       </div>
       <div>
           <h2>Content</h2>
-          <h3>StatusBar with CustomHooks - useOnlineStatus</h3>
-          <StatusBar />
+          <h3>Parent - normal</h3>
+          <Parent />
 
           <hr/>
-          <h3>SaveButton with CustomHooks - useOnlineStatus</h3>
-          <SaveButton />
+          <h3>Parent with useCallback</h3>
+          <ParentWithCallback />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
