@@ -2,6 +2,10 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ClickComponents from './comps/ClickComponents'
+import DoubleClickComponents from './comps/DoubleClickComponents'
+import ChangeComponents from './comps/ChangeComponents'
+import ClickComponentsStopPropagation from './comps/ClickComponentsStopPropagation'
 
 function App() {
   return (
@@ -21,7 +25,15 @@ function App() {
       </div>
       <div>
           <h2>Content</h2>
-          <h3> --- </h3>
+          <h3>Click Components</h3>
+          <ClickComponents />
+          <h3>DoubleClick Components</h3>
+          <DoubleClickComponents />
+          <h3>Change Components</h3>
+          <ChangeComponents />
+          <h3>Click Components + Stop Propagation for Main Panel</h3>
+          <ClickComponentsStopPropagation />
+
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
