@@ -2,6 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Counter from './comps/Counter'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <div>
           <h2>Content</h2>
           <h3> --- </h3>
+          <Counter />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
