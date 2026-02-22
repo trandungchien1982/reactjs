@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './comps/Counter'
+import Counter2NewLayout from './comps/Counter2NewLayout'
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           <h2>Content</h2>
           <h3>Counter with CustomHooks - useCounter</h3>
           <Counter />
+          <hr/>
+          <h3>Counter2NewLayout with CustomHooks - useCounter</h3>
+          <Counter2NewLayout />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

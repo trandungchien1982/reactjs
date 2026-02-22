@@ -1,12 +1,9 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import useCounter from './useCounter'; // Import Custom Hook
 
 function Counter() {
-  const [count, setCount] = useState(0);
-
-  const increment = () => setCount(count + 1);
-  const decrement = () => setCount(count - 1);
-  const reset = () => setCount(0);
+  const { count, increment, decrement, reset } = useCounter(10); // Sử dụng Custom Hook
 
   return (
     <div>
