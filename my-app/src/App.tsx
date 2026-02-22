@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import StatusBar from './comps/StatusBar'
+import SaveButton from './comps/SaveButton'
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
           <h2>Content</h2>
           <h3>StatusBar with CustomHooks - useOnlineStatus</h3>
           <StatusBar />
+
+          <hr/>
+          <h3>SaveButton with CustomHooks - useOnlineStatus</h3>
+          <SaveButton />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
