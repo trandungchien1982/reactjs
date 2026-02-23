@@ -2,8 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Counter from './comps/Counter'
-import SimpleForm from './comps/SimpleForm'
+import ThemeContext from './comps/ThemeContext'
 
 function App() {
   return (
@@ -16,19 +15,15 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>22.useReducer</h1>
+      <h1>23.useContext</h1>
       <div className="card">
-        <h2>React-Roadmap (22.useReducer) - Hooks</h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/quan-ly-state-voi-usereducer-gon-gang-va-de-doan-react-roadmap/">https://tuyendung.evotek.vn/quan-ly-state-voi-usereducer-gon-gang-va-de-doan-react-roadmap/</a>
+        <h2>React-Roadmap (23.useContext) - Hooks</h2>
+        <a target="_blank" href="https://tuyendung.evotek.vn/su-dung-usecontext-de-quan-ly-global-state-mot-lua-chon-khac-ngoai-redux-react-roadmap/">https://tuyendung.evotek.vn/su-dung-usecontext-de-quan-ly-global-state-mot-lua-chon-khac-ngoai-redux-react-roadmap/</a>
       </div>
       <div>
           <h2>Content</h2>
-          <h3>useReducer-Counter</h3>
-          <Counter />
-
-          <hr/>
-          <h3>useReducer-SimpleForm</h3>
-          <SimpleForm />
+          <h3>useContext-ThemeContext</h3>
+          <ThemeContext />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
