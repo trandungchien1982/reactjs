@@ -2,7 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Calculator from './comps/Calculator'
+import Counter from './comps/Counter'
 
 function App() {
   return (
@@ -15,15 +15,15 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>21.useMemo</h1>
+      <h1>22.useReducer</h1>
       <div className="card">
-        <h2>React-Roadmap (21.useMemo) - Hooks</h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/khi-nao-va-vi-sao-nen-dung-usecallback-usememo-va-useref-react-roadmap/#useMemo_Ghi_nho_Memoizing_Gia_tri">https://tuyendung.evotek.vn/khi-nao-va-vi-sao-nen-dung-usecallback-usememo-va-useref-react-roadmap/#useMemo_Ghi_nho_Memoizing_Gia_tri</a>
+        <h2>React-Roadmap (22.useReducer) - Hooks</h2>
+        <a target="_blank" href="https://tuyendung.evotek.vn/quan-ly-state-voi-usereducer-gon-gang-va-de-doan-react-roadmap/">https://tuyendung.evotek.vn/quan-ly-state-voi-usereducer-gon-gang-va-de-doan-react-roadmap/</a>
       </div>
       <div>
           <h2>Content</h2>
-          <h3>Calculator with useMemo</h3>
-          <Calculator />
+          <h3>useReducer-Counter</h3>
+          <Counter />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
