@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ThemeContext from './comps/ThemeContext'
+import ThemeProvider from './comps/ThemeProvider';
+import ThemeButton from './comps/ThemeButton';
+import ThemedDiv from './comps/ThemedDiv';
 
 function App() {
   return (
@@ -22,8 +25,18 @@ function App() {
       </div>
       <div>
           <h2>Content</h2>
-          <h3>useContext-ThemeContext</h3>
-          <ThemeContext />
+          <h3>useContext-ThemeProvider =||= ThemeDiv</h3>
+          <ThemeProvider>
+            <div className="App">
+              <h1>Ứng dụng Theme Switcher</h1>
+              <ThemeButton />
+              <ThemedDiv>
+                <p>Đây là nội dung được ảnh hưởng bởi Theme.</p>
+                <p>Component này không nhận props theme, nó đọc từ Context.</p>
+              </ThemedDiv>
+              {/* Các component khác cũng có thể dùng useContext(ThemeContext) */}
+            </div>
+          </ThemeProvider>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

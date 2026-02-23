@@ -1,12 +1,9 @@
-import { useState, useMemo, useReducer } from 'react';
-import reducer, { initialState } from './utils';
+// src/contexts/ThemeContext.js
+import { createContext } from 'react';
 
-function ThemeContext() {
-  return (
-      <div style={{border: "5px solid lightgreen"}}>
-        ThemeContext Cnt
-      </div>
-    );
-}
+const ThemeContext = createContext({
+  theme: 'light', // Giá trị mặc định
+  toggleTheme: () => {}, // Hàm rỗng mặc định
+});
 
 export default ThemeContext;
