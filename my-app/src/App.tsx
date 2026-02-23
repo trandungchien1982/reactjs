@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './comps/Counter'
+import SimpleForm from './comps/SimpleForm'
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
           <h2>Content</h2>
           <h3>useReducer-Counter</h3>
           <Counter />
+
+          <hr/>
+          <h3>useReducer-SimpleForm</h3>
+          <SimpleForm />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
