@@ -2,10 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import ThemeContext from './comps/ThemeContext'
-import ThemeProvider from './comps/ThemeProvider';
-import ThemeButton from './comps/ThemeButton';
-import ThemedDiv from './comps/ThemedDiv';
+import Counter from './comps/Counter'
 
 function App() {
   return (
@@ -18,25 +15,14 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>23.useContext</h1>
+      <h1>24.reduxToolkit.CounterSlice</h1>
       <div className="card">
-        <h2>React-Roadmap (23.useContext) - Hooks</h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/su-dung-usecontext-de-quan-ly-global-state-mot-lua-chon-khac-ngoai-redux-react-roadmap/">https://tuyendung.evotek.vn/su-dung-usecontext-de-quan-ly-global-state-mot-lua-chon-khac-ngoai-redux-react-roadmap/</a>
+        <h2>React-Roadmap (24.reduxToolkit.CounterSlice) - Global State with slice</h2>
+        <a target="_blank" href="https://tuyendung.evotek.vn/bat-dau-voi-redux-toolkit-redux-gio-that-de-dang-react-roadmap/#Tich_Hop_Redux_Toolkit_Vao_React_App">https://tuyendung.evotek.vn/bat-dau-voi-redux-toolkit-redux-gio-that-de-dang-react-roadmap/#Tich_Hop_Redux_Toolkit_Vao_React_App</a>
       </div>
       <div>
           <h2>Content</h2>
-          <h3>useContext-ThemeProvider =||= ThemeDiv</h3>
-          <ThemeProvider>
-            <div className="App">
-              <h1>Ứng dụng Theme Switcher</h1>
-              <ThemeButton />
-              <ThemedDiv>
-                <p>Đây là nội dung được ảnh hưởng bởi Theme.</p>
-                <p>Component này không nhận props theme, nó đọc từ Context.</p>
-              </ThemedDiv>
-              {/* Các component khác cũng có thể dùng useContext(ThemeContext) */}
-            </div>
-          </ThemeProvider>
+          <h3>Redux Toolkit - Slice Cnt</h3>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
