@@ -2,7 +2,9 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Counter from './comps/Counter'
+import CounterDisplay from './comps/CounterDisplay'
+import CounterDisplayX10 from './comps/CounterDisplayX10'
+import CounterButton from './comps/CounterButton'
 
 function App() {
   return (
@@ -22,7 +24,26 @@ function App() {
       </div>
       <div>
           <h2>Content</h2>
-          <h3>Redux Toolkit - Slice Cnt</h3>
+          <div style={{ background: "cyan"}}>
+            <h3>Counter Display</h3>
+            <CounterDisplay />
+          </div>
+
+          <hr />
+
+          <div style={{ background: "lightgreen"}}>
+            <h3>Counter Buttons</h3>
+            <CounterButton />
+          </div>
+
+          <hr />
+
+
+          <div style={{ background: "lightyellow"}}>
+            <h3>Counter Display X10</h3>
+            <CounterDisplayX10 />
+          </div>
+
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
