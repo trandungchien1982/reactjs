@@ -1,38 +1,18 @@
 
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import UserProfile from './comps/UserProfile'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './comps/Layout'; // Chúng ta sẽ nói về layout sau
 
 function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>25.reduxToolkit.createAsyncThunk</h1>
-      <div className="card">
-        <h2>React-Roadmap (25.reduxToolkit.createAsyncThunk) - Async Call API requests</h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/bat-dau-voi-redux-toolkit-redux-gio-that-de-dang-react-roadmap/#Xu_Ly_Logic_Bat_Dong_Bo_voi_createAsyncThunk">https://tuyendung.evotek.vn/bat-dau-voi-redux-toolkit-redux-gio-that-de-dang-react-roadmap/#Xu_Ly_Logic_Bat_Dong_Bo_voi_createAsyncThunk</a>
-      </div>
-      <div>
-          <div style={{ background: "lightcyan", padding: "10px"}}>
-            <h3>Simulate Fetch Users OK - Fail and see all raised events ... </h3>
-            <UserProfile />
-          </div>
-
-          <hr />
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          {/* Các Route con sẽ được render bên trong Layout */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
