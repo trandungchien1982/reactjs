@@ -2,9 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import CounterDisplay from './comps/CounterDisplay'
-import CounterDisplayX10 from './comps/CounterDisplayX10'
-import CounterButton from './comps/CounterButton'
+import UserProfile from './comps/UserProfile'
 
 function App() {
   return (
@@ -17,33 +15,19 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>24.reduxToolkit.CounterSlice</h1>
+      <h1>25.reduxToolkit.createAsyncThunk</h1>
       <div className="card">
-        <h2>React-Roadmap (24.reduxToolkit.CounterSlice) - Global State with slice</h2>
-        <a target="_blank" href="https://tuyendung.evotek.vn/bat-dau-voi-redux-toolkit-redux-gio-that-de-dang-react-roadmap/#Tich_Hop_Redux_Toolkit_Vao_React_App">https://tuyendung.evotek.vn/bat-dau-voi-redux-toolkit-redux-gio-that-de-dang-react-roadmap/#Tich_Hop_Redux_Toolkit_Vao_React_App</a>
+        <h2>React-Roadmap (25.reduxToolkit.createAsyncThunk) - Async Call API requests</h2>
+        <a target="_blank" href="https://tuyendung.evotek.vn/bat-dau-voi-redux-toolkit-redux-gio-that-de-dang-react-roadmap/#Xu_Ly_Logic_Bat_Dong_Bo_voi_createAsyncThunk">https://tuyendung.evotek.vn/bat-dau-voi-redux-toolkit-redux-gio-that-de-dang-react-roadmap/#Xu_Ly_Logic_Bat_Dong_Bo_voi_createAsyncThunk</a>
       </div>
       <div>
           <h2>Content</h2>
-          <div style={{ background: "cyan"}}>
-            <h3>Counter Display</h3>
-            <CounterDisplay />
+          <div style={{ background: "lightcyan"}}>
+            <h3>User Profile</h3>
+            <UserProfile />
           </div>
 
           <hr />
-
-          <div style={{ background: "lightgreen"}}>
-            <h3>Counter Buttons</h3>
-            <CounterButton />
-          </div>
-
-          <hr />
-
-
-          <div style={{ background: "lightyellow"}}>
-            <h3>Counter Display X10</h3>
-            <CounterDisplayX10 />
-          </div>
-
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
