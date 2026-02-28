@@ -21,9 +21,8 @@ function App() {
         <a target="_blank" href="https://tuyendung.evotek.vn/bat-dau-voi-redux-toolkit-redux-gio-that-de-dang-react-roadmap/#Xu_Ly_Logic_Bat_Dong_Bo_voi_createAsyncThunk">https://tuyendung.evotek.vn/bat-dau-voi-redux-toolkit-redux-gio-that-de-dang-react-roadmap/#Xu_Ly_Logic_Bat_Dong_Bo_voi_createAsyncThunk</a>
       </div>
       <div>
-          <h2>Content</h2>
-          <div style={{ background: "lightcyan"}}>
-            <h3>User Profile</h3>
+          <div style={{ background: "lightcyan", padding: "10px"}}>
+            <h3>Simulate Fetch Users OK - Fail and see all raised events ... </h3>
             <UserProfile />
           </div>
 

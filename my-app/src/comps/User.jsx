@@ -3,3 +3,5 @@ export interface User {
     name: string;
     // ... các thuộc tính khác
 };
+
+//export default User;
