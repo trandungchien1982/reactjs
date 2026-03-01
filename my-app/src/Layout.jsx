@@ -15,7 +15,7 @@ function Layout() {
       <hr />
 
       <Navbar />
-      <div>The main page Layout Cnt</div>
+      <div>27.ReactRouter6.Protected.Url - Main Layout</div>
       <main>
         {/* Nơi các Route con (HomePage, AboutPage, ContactPage) sẽ được render */}
         <Outlet />

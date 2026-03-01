@@ -18,7 +18,7 @@ function Footer() {
     <>
         <hr />
         <div style={{ border: "1px solid pink", padding: "20px"}}>
-            <div>Footer Cnt</div>
+            <div>27.ReactRouter6.Protected.Url - Footer Cnt</div>
             <div>
                 <a href="https://vite.dev" target="_blank">
                   <img src={viteLogo} className="logo" alt="Vite logo" />
