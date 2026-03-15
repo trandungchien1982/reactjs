@@ -2,8 +2,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
+import GETPage from './pages/GETPage';
+import POSTPage from './pages/POSTPage';
 import UserProfile from './pages/UserProfile';
 import UserAccountDetail from './pages/UserAccountDetail';
 import ProductListPage from './pages/ProductListPage';
@@ -17,8 +17,8 @@ function App() {
         <Route path="/" element={<Layout />} >
           {/* Các Route con sẽ được render bên trong Layout */}
           <Route index element={<HomePage />} /> {/* Trang chủ */}
-          <Route path="about" element={<AboutPage />} />
-          <Route path="contact" element={<ContactPage />} />
+          <Route path="about" element={<GETPage />} />
+          <Route path="contact" element={<POSTPage />} />
 
           <Route path="users/:userId" element={<UserProfile />} />
           <Route path="users/:userId/:accountName" element={<UserAccountDetail />} />

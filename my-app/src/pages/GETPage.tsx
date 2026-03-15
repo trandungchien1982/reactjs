@@ -1,15 +1,14 @@
-// src/components/Navbar.js
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-function AboutPage() {
+function GETPage() {
   // Hàm style để tùy chỉnh active class (v6)
   return (
     <>
-      <h1>AboutPage Title</h1>
-      <div>AboutPage Cnt</div>
+      <h1>GET Page Title</h1>
+      <div>GET Page Cnt</div>
     </>
   );
 }
 
-export default AboutPage;
+export default GETPage;
